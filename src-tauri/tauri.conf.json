@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "identifier": "com.officelite.app",
+  "productName": "OfficeLite",
+  "version": "0.1.0",
+  "build": {
+    "beforeDevCommand": "cd /Users/venky/office-lite-rs/frontend && npm run dev",
+    "beforeBuildCommand": "cd /Users/venky/office-lite-rs/frontend && npm run build",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "/Users/venky/office-lite-rs/frontend/dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Office Lite",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "security": {
+    "capabilities": ["default"]
+  }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all"
+  }
+}
